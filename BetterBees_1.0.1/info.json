@@ -1,0 +1,11 @@
+{
+  "name": "BetterBees",
+  "version": "1.0.1",
+  "factorio_version": "1.1",
+  "title": "Better Bees",
+  "author": "JacobD",
+  "contact": "Discord: @JD2005#5565",
+  "homepage": "",
+  "description": "A modified version of Beekeeping by KaueNP and notnotmelon. Made to fix issues with duplicate bees and bees producing resources that cannot be used or obtained normally. All credit for dynamic code and graphics to the original authors.",
+  "dependencies": ["base", "stdlib"]
+}
