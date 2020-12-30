@@ -115,7 +115,6 @@ if data.raw.fluid["tar"] then
     beekeeping.from_fluid({data.raw.fluid["tar"]})
 end
 
-
 require 'prototypes.dynamic.item'
 require 'prototypes.dynamic.recipe'
 require 'prototypes.dynamic.technology'

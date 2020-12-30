@@ -1,13 +1,13 @@
 
 local Event = require("__stdlib__/stdlib/event/event")
-local start_inventory = {}
+local startInventory = {}
+local startingItems = {}
 
-function start_inventory.on_init()
+function startInventory.on_init()
     if remote.interfaces['freeplay'] then
         local createdItems = remote.call("freeplay", "get_created_items")
-        createdItems["clean-queen-10"] = 1
         for _,item in pairs(game.item_prototypes) do
-            if (item.name:find "-queen-12" ~= nil) then
+            if string.match(item.name, '%-queen%-12') ~= nil then
                 createdItems[item.name] = 1
             end
         end
@@ -15,4 +15,4 @@ function start_inventory.on_init()
     end
 end
 
-Event.register(Event.core_events.init, start_inventory.on_init)
+Event.register(Event.core_events.init, startInventory.on_init)
